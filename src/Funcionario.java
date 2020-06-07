@@ -7,8 +7,13 @@ abstract public class Funcionario extends Pessoa {
 	protected boolean ativo;
 	
 	/* constructor */
-	public Funcionario () { };
-	
+	public Funcionario(String cargo, double salario, boolean beneficioMedico, boolean ativo) {
+		this.cargo = cargo;
+		this.salario = salario;
+		this.beneficioMedico = beneficioMedico;
+		this.ativo = ativo;
+	}
+
 	/* methods */
 	abstract public String consultaMedica();
 
