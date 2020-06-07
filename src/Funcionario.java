@@ -1,4 +1,4 @@
-abstract public class Funcionario extends Pessoa {
+public class Funcionario extends Pessoa {
 
 	/* attributes */
 	protected String cargo;
@@ -16,7 +16,9 @@ abstract public class Funcionario extends Pessoa {
 	}
 
 	/* methods */
-	abstract public String consultaMedica();
+	public String consultaMedica() {
+
+	}
 
 	public void calculaSalario() {
 
