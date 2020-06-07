@@ -4,7 +4,7 @@ public class Funcionario extends Pessoa {
 	private String cargo;
 	private double salario;
 	private boolean beneficioMedico;
-	private boolean ativo;
+	private boolean ativo = true;
 	
 	/* constructor */
 	public Funcionario(String nome, String sobrenome, String idade, String cargo, double salario, boolean beneficioMedico, boolean ativo) {
@@ -40,8 +40,12 @@ public class Funcionario extends Pessoa {
 		return this.salario * porcentagem / 100;
 	}
 
-	public void encerrarContrato() {
-
+	public void toggleContrato() {
+		if(this.ativo == false) {
+			this.ativo = true;
+		} else {
+			this.ativo = false;
+		}
 	}
 
 	/* getters & setters */
