@@ -20,7 +20,13 @@ public class Endereco {
 
 	/* methods */
 	public String dados() {
-
+		return "Dados do endereço\n"
+			+ "\nRua: " + this.rua
+			+ "\nNúmero: " + this.numero
+			+ "\nBairro: " + this.bairro
+			+ "\nCidade: " + this.cidade
+			+ "\nEstado: " + this.estado
+			+ "\nPaís: " + this.pais;
 	}
 
 	/* getters & setters */
