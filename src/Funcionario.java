@@ -16,8 +16,13 @@ public class Funcionario extends Pessoa {
 	}
 
 	/* methods */
-	public String consultaMedica() {
+	public double consultaMedica(double valorConsulta) {
+		double desconto = 1;
+		if(this.beneficioMedico == true) {
+			desconto = 0.5;
+		}
 
+		return valorConsulta * desconto;
 	}
 
 	public void calculaSalario() {
