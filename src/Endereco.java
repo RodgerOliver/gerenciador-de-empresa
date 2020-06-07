@@ -9,10 +9,15 @@ public class Endereco {
 	private String pais;
 	
 	/* constructor */
-	public Endereco () {
-
+	public Endereco(String rua, int numero, String bairro, String cidade, String estado, String pais) {
+		this.rua = rua;
+		this.numero = numero;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.pais = pais;
 	}
-	
+
 	/* methods */
 	public String dados() {
 
