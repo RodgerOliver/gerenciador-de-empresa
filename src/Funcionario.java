@@ -7,7 +7,7 @@ abstract public class Funcionario extends Pessoa {
 	protected boolean ativo;
 	
 	/* constructor */
-	public Funcionario(String nome, String sobrenome, int idade, String cargo, double salario, boolean beneficioMedico, boolean ativo) {
+	public Funcionario(String nome, String sobrenome, String idade, String cargo, double salario, boolean beneficioMedico, boolean ativo) {
 		super(nome, sobrenome, idade);
 		this.cargo = cargo;
 		this.salario = salario;
