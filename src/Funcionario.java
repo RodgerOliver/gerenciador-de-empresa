@@ -1,27 +1,56 @@
-abstract public class Funcionario extends Pessoa {
+public class Funcionario extends Pessoa {
 
 	/* attributes */
-	protected String cargo;
-	protected double salario;
-	protected boolean beneficioMedico;
-	protected boolean ativo;
+	private String cargo;
+	private double salario;
+	private boolean beneficioMedico;
+	private boolean ativo = true;
 	
 	/* constructor */
-	public Funcionario () { };
-	
+	public Funcionario(String nome, String sobrenome, String idade, String cargo, double salario, boolean beneficioMedico, boolean ativo) {
+		super(nome, sobrenome, idade);
+		this.cargo = cargo;
+		this.salario = salario;
+		this.beneficioMedico = beneficioMedico;
+		this.ativo = ativo;
+	}
+
 	/* methods */
-	abstract public String consultaMedica();
+	public double consultaMedica(double valorConsulta) {
+		double desconto = 1;
+		if(this.beneficioMedico == true) {
+			desconto = 0.5;
+		}
 
-	public void calculaSalario() {
-
+		return valorConsulta * desconto;
 	}
 
-	public void calculaINSS() {
-
+	public double calculaSalario() {
+		return this.salario - calculaINSS();
 	}
 
-	public void encerrarContrato() {
+	public double calculaINSS() {
+		double porcentagem = 0;
 
+		if(this.salario <= 1045) {
+			porcentagem = 7.5;
+		} else if(this.salario <= 2089.60) {
+			porcentagem = 9;
+		} else if(this.salario <= 3134.40) {
+			porcentagem = 12;
+		} else if(this.salario <= 6101.06) {
+			porcentagem = 14;
+		}
+
+		return this.salario * porcentagem / 100;
+	}
+
+	public void toggleContrato() {
+		if(this.ativo == false) {
+			this.ativo = true;
+		} else {
+			this.ativo = false;
+		}
 	}
 
 	/* getters & setters */
