@@ -5,13 +5,16 @@ abstract public class Empresa {
 	protected Endereco endereco;
 	
 	/* constructor */
-	public Empresa() {
-
+	public Empresa(String nome, Endereco endereco) {
+		this.nome;
+		this.endereco;
 	}
 
 	/* methods */
 	public String dados() {
-
+		return "Dados da empresa\n"
+				+ "\nNome:		"	+ this.rua
+				+ "\nEndereço:	"	+ this.endereco
 	}
 
 	abstract public String produzir();
