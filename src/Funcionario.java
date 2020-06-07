@@ -21,8 +21,20 @@ abstract public class Funcionario extends Pessoa {
 
 	}
 
-	public void calculaINSS() {
+	public double calculaINSS() {
+		double porcentagem = 0;
 
+		if(this.salario <= 1045) {
+			porcentagem = 7.5;
+		} else if(this.salario <= 2089.60) {
+			porcentagem = 9;
+		} else if(this.salario <= 3134.40) {
+			porcentagem = 12;
+		} else if(this.salario <= 6101.06) {
+			porcentagem = 14;
+		}
+
+		return this.salario * porcentagem / 100;
 	}
 
 	public void encerrarContrato() {
