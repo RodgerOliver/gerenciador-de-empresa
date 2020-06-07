@@ -25,8 +25,8 @@ public class Funcionario extends Pessoa {
 		return valorConsulta * desconto;
 	}
 
-	public void calculaSalario() {
-
+	public double calculaSalario() {
+		return this.salario - calculaINSS();
 	}
 
 	public double calculaINSS() {
