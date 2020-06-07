@@ -6,8 +6,12 @@ abstract public class Pessoa {
 	protected String idade;
 	
 	/* constructor */
-	public Pessoa () { };
-	
+	public Pessoa(String nome, String sobrenome, String idade) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.idade = idade;
+	}
+
 	/* methods */
 	public String toString() {
 
