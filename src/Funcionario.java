@@ -1,10 +1,10 @@
 public class Funcionario extends Pessoa {
 
 	/* attributes */
-	protected String cargo;
-	protected double salario;
-	protected boolean beneficioMedico;
-	protected boolean ativo;
+	private String cargo;
+	private double salario;
+	private boolean beneficioMedico;
+	private boolean ativo;
 	
 	/* constructor */
 	public Funcionario(String nome, String sobrenome, String idade, String cargo, double salario, boolean beneficioMedico, boolean ativo) {
