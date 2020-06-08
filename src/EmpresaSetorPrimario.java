@@ -11,6 +11,13 @@ public class EmpresaSetorPrimario extends Empresa {
 	}
 	
 	/* methods */
+	@Override
+	public String dados(){
+		return super.dados()
+			+ "\nMatéria Prima: " + this.materiaPrima
+			+ "\nProduto Final: " + this.produtoFinal;
+	}
+
 	public String produzir() {
 		return "A empresa "+ this.nome +" está transformando "+ this.materiaPrima +" em "+ this.produtoFinal;
 	}
