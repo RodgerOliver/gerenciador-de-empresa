@@ -9,6 +9,11 @@ public class EmpresaSetorSecundario extends Empresa {
 	}
 
 	/* methods */
+	@Override
+	public String dados(){
+		return super.dados()
+				+ "\nTipo de Loja:" + this.tipoDeLoja;
+	}
 	public String produzir() {
 
 	}
