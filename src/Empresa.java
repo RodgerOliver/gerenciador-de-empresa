@@ -12,7 +12,9 @@ abstract public class Empresa {
 
 	/* methods */
 	public String dados() {
-
+		return "Dados da empresa\n"
+				+ "\nNome:" + this.nome
+				+ "\nEndereço: " + this.endereco.dados();
 	}
 
 	abstract public String produzir();
