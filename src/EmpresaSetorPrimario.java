@@ -12,7 +12,7 @@ public class EmpresaSetorPrimario extends Empresa {
 	
 	/* methods */
 	public String produzir() {
-
+		return "A empresa "+ this.nome +" está transformando "+ this.materiaPrima +" em "+ this.produtoFinal;
 	}
 
 	/* getters & setters */
