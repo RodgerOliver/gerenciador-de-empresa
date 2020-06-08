@@ -15,19 +15,19 @@ public class EmpresaSetorPrimario extends Empresa {
 	}
 
 	/* getters & setters */
-	private void setMateriaPrima(String materiaPrima) {
+	public void setMateriaPrima(String materiaPrima) {
 		this.materiaPrima = materiaPrima;
 	}
 
-	private String getMateriaPrima() {
+	public String getMateriaPrima() {
 		return materiaPrima;
 	}
 
-	private void setProdutoFinal(String produtoFinal) {
+	public void setProdutoFinal(String produtoFinal) {
 		this.produtoFinal = produtoFinal;
 	}
 
-	private String getProdutoFinal() {
+	public String getProdutoFinal() {
 		return produtoFinal;
 	}
 
