@@ -18,27 +18,27 @@ abstract public class Pessoa {
 	}
 
 	/* getters & setters */
-	protected void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	protected String getNome () {
+	public String getNome () {
 		return nome;
 	}
 
-	protected void setSobrenome(String sobrenome) {
+	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
 
-	protected String getSobrenome () {
+	public String getSobrenome () {
 		return sobrenome;
 	}
 
-	protected void setIdade(String idade) {
+	public void setIdade(String idade) {
 		this.idade = idade;
 	}
 
-	protected String getIdade () {
+	public String getIdade () {
 		return idade;
 	}
 
