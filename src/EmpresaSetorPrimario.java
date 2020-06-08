@@ -12,7 +12,13 @@ public class EmpresaSetorPrimario extends Empresa {
 	
 	/* methods */
 	public String produzir() {
-
+		//aqui que eu fiqui com duvida kkkkks
+		return super.dados()
+				+ "A empresa\n"
+				+ "\nNome"				+ this.nome
+				+ "\nestá transformando"
+				+ "\nmateria prima " 	+ this.materiaPrima
+				+ "\nem Produto final:" + this.produtoFinal.dados();
 	}
 
 	/* getters & setters */
