@@ -3,10 +3,10 @@ abstract public class Pessoa {
 	/* attributes */
 	protected String nome;
 	protected String sobrenome;
-	protected String idade;
+	protected int idade;
 	
 	/* constructor */
-	public Pessoa(String nome, String sobrenome, String idade) {
+	public Pessoa(String nome, String sobrenome, int idade) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.idade = idade;
@@ -34,11 +34,11 @@ abstract public class Pessoa {
 		return sobrenome;
 	}
 
-	protected void setIdade(String idade) {
+	protected void setIdade(int idade) {
 		this.idade = idade;
 	}
 
-	protected String getIdade () {
+	protected int getIdade () {
 		return idade;
 	}
 
