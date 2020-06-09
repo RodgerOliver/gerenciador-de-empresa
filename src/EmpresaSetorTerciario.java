@@ -1,6 +1,6 @@
 public class EmpresaSetorTerciario extends Empresa {
 
-	/* methods */
+	/* attributes */
 	private String servicoPrestado;
 	
 	/* constructor */
