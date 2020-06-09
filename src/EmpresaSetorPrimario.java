@@ -5,13 +5,21 @@ public class EmpresaSetorPrimario extends Empresa {
 	private String produtoFinal;
 	
 	/* constructor */
-	public EmpresaSetorPrimario() {
-
+	public EmpresaSetorPrimario(String materiaPrima, String produtoFinal) {
+		this.materiaPrima = materiaPrima;
+		this.produtoFinal = produtoFinal;
 	}
 	
 	/* methods */
-	public String produzir() {
+	@Override
+	public String dados(){
+		return super.dados()
+			+ "\nMatéria Prima: " + this.materiaPrima
+			+ "\nProduto Final: " + this.produtoFinal;
+	}
 
+	public String produzir() {
+		return "A empresa "+ this.nome +" está transformando "+ this.materiaPrima +" em "+ this.produtoFinal;
 	}
 
 	/* getters & setters */
