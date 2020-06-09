@@ -4,7 +4,8 @@ public class EmpresaSetorTerciario extends Empresa {
 	private String servicoPrestado;
 	
 	/* constructor */
-	public EmpresaSetorTerciario(String servisoPrestado) {
+	public EmpresaSetorTerciario(String nome, Endereco endereco, String servisoPrestado) {
+		super(nome, endereco);
 		this.servicoPrestado = servisoPrestado;
 	}
 	
