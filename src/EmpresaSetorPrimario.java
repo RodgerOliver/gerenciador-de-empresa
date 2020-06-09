@@ -5,7 +5,8 @@ public class EmpresaSetorPrimario extends Empresa {
 	private String produtoFinal;
 	
 	/* constructor */
-	public EmpresaSetorPrimario(String materiaPrima, String produtoFinal) {
+	public EmpresaSetorPrimario(String nome, Endereco endereco, String materiaPrima, String produtoFinal) {
+		super(nome, endereco);
 		this.materiaPrima = materiaPrima;
 		this.produtoFinal = produtoFinal;
 	}
