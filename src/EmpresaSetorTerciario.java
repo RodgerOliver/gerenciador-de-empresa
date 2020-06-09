@@ -9,7 +9,11 @@ public class EmpresaSetorTerciario extends Empresa {
 	}
 	
 	/* methods */
-	public String produzir() {
+	@Override
+	public String dados() {
+		return super.dados()
+			+ "\nServiço Prestado:" + this.servicoPrestado;
+	}
 
 	}
 
