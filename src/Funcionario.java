@@ -54,35 +54,35 @@ public class Funcionario extends Pessoa {
 	}
 
 	/* getters & setters */
-	protected void setCargo(String cargo) {
+	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
 
-	protected String getCargo () {
+	public String getCargo () {
 		return cargo;
 	}
 
-	protected void setSalario(double salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
 
-	protected double getSalario () {
+	public double getSalario () {
 		return salario;
 	}
 
-	protected void setBeneficioMedico(boolean beneficioMedico) {
+	public void setBeneficioMedico(boolean beneficioMedico) {
 		this.beneficioMedico = beneficioMedico;
 	}
 
-	protected boolean getBeneficioMedico () {
+	public boolean getBeneficioMedico () {
 		return beneficioMedico;
 	}
 
-	protected void setAtivo(boolean ativo) {
+	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
 
-	protected boolean getAtivo () {
+	public boolean getAtivo () {
 		return ativo;
 	}
 

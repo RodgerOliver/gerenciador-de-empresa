@@ -14,11 +14,11 @@ public class EmpresaSetorTerciario extends Empresa {
 	}
 
 	/* getters & setters */
-	private void setServicoPrestado (String servicoPrestado) {
+	public void setServicoPrestado (String servicoPrestado) {
 		this.servicoPrestado = servicoPrestado;
 	}
 
-	private String getServicoPrestado () {
+	public String getServicoPrestado () {
 		return servicoPrestado;
 	}
 

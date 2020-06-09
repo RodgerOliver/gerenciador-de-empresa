@@ -30,51 +30,51 @@ public class Endereco {
 	}
 
 	/* getters & setters */
-	private void setRua(String rua) {
+	public void setRua(String rua) {
 		this.rua = rua;
 	}
 
-	private String getRua() {
+	public String getRua() {
 		return rua;
 	}
 
-	private void setNumero (int numero) {
+	public void setNumero (int numero) {
 		this.numero = numero;
 	}
 
-	private int getNumero() {
+	public int getNumero() {
 		return numero;
 	}
 
-	private void setBairro(String bairro) {
+	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
 
-	private String getBairro () {
+	public String getBairro () {
 		return bairro;
 	}
 
-	private void setCidade(String cidade) {
+	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
 
-	private String getCidade () {
+	public String getCidade () {
 		return cidade;
 	}
 
-	private void setEstado(String estado) {
+	public void setEstado(String estado) {
 		this.estado = estado;
 	}
 
-	private String getEstado () {
+	public String getEstado () {
 		return estado;
 	}
 
-	private void setPais(String pais) {
+	public void setPais(String pais) {
 		this.pais = pais;
 	}
 
-	private String getPais () {
+	public String getPais () {
 		return pais;
 	}
 

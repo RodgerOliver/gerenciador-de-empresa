@@ -14,11 +14,11 @@ public class EmpresaSetorSecundario extends Empresa {
 	}
 
 	/* getters & setters */
-	private void setTipoDeLoja (String tipoDeLoja) {
+	public void setTipoDeLoja (String tipoDeLoja) {
 		this.tipoDeLoja = tipoDeLoja;
 	}
 
-	private String getTipoDeLoja () {
+	public String getTipoDeLoja () {
 		return tipoDeLoja;
 	}
 

@@ -20,19 +20,19 @@ abstract public class Empresa {
 	abstract public String produzir();
 
 	/* getters & setters */
-	protected void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	protected String getNome() {
+	public String getNome() {
 		return nome;
 	}
 
-	protected void setEndereco(Endereco endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
-	protected Endereco getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
