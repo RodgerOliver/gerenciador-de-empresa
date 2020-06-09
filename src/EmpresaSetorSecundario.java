@@ -15,7 +15,7 @@ public class EmpresaSetorSecundario extends Empresa {
 				+ "\nTipo de Loja:" + this.tipoDeLoja;
 	}
 	public String produzir() {
-
+		return "A empresa "+ this.nome +" é do tipo "+ this.tipoDeLoja;
 	}
 
 	/* getters & setters */
