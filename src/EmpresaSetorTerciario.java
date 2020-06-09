@@ -4,13 +4,19 @@ public class EmpresaSetorTerciario extends Empresa {
 	private String servicoPrestado;
 	
 	/* constructor */
-	public EmpresaSetorTerciario() {
-
+	public EmpresaSetorTerciario(String servisoPrestado) {
+		this.servicoPrestado = servisoPrestado;
 	}
 	
 	/* methods */
-	public String produzir() {
+	@Override
+	public String dados() {
+		return super.dados()
+			+ "\nServiço Prestado:" + this.servicoPrestado;
+	}
 
+	public String produzir() {
+		return "A empresa "+ this.nome +" presta o seguinte serviço: "+ this.servicoPrestado;
 	}
 
 	/* getters & setters */
