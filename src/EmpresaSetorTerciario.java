@@ -15,6 +15,8 @@ public class EmpresaSetorTerciario extends Empresa {
 			+ "\nServiço Prestado:" + this.servicoPrestado;
 	}
 
+	public String produzir() {
+		return "A empresa "+ this.nome +" presta o seguinte serviço: "+ this.servicoPrestado;
 	}
 
 	/* getters & setters */
