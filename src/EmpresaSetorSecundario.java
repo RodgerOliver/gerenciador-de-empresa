@@ -4,13 +4,18 @@ public class EmpresaSetorSecundario extends Empresa {
 	private String tipoDeLoja;
 	
 	/* constructor */
-	public EmpresaSetorSecundario () {
-
+	public EmpresaSetorSecundario(String tipoDeLoja) {
+		this.tipoDeLoja = tipoDeLoja;
 	}
 
 	/* methods */
+	@Override
+	public String dados(){
+		return super.dados()
+				+ "\nTipo de Loja:" + this.tipoDeLoja;
+	}
 	public String produzir() {
-
+		return "A empresa "+ this.nome +" é do tipo "+ this.tipoDeLoja;
 	}
 
 	/* getters & setters */
