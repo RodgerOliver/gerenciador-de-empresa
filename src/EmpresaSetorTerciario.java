@@ -4,8 +4,8 @@ public class EmpresaSetorTerciario extends Empresa {
 	private String servicoPrestado;
 	
 	/* constructor */
-	public EmpresaSetorTerciario() {
-
+	public EmpresaSetorTerciario(String servisoPrestado) {
+		this.servicoPrestado = servisoPrestado;
 	}
 	
 	/* methods */
