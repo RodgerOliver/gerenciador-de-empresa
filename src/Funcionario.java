@@ -18,7 +18,7 @@ public class Funcionario extends Pessoa {
 	/* methods */
 	public String dados() {
 		return "Dados do funcionário\n"
-			+ "\nNome Completo: " + super
+			+ "\nNome Completo: " + super.toString()
 			+ "\nCargo: "         + this.cargo
 			+ "\nBenefício: "     + this.beneficioMedico
 			+ "\nAtivo: "         + this.ativo
