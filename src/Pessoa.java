@@ -44,4 +44,11 @@ abstract public class Pessoa {
 		return idade;
 	}
 
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
 }
