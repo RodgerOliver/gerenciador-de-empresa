@@ -16,6 +16,15 @@ public class Funcionario extends Pessoa {
 	}
 
 	/* methods */
+	public String dados() {
+		return "Dados do funcionário\n"
+			+ "\nNome Completo: " + super
+			+ "\nCargo: "         + this.cargo
+			+ "\nBenefício: "     + this.beneficioMedico
+			+ "\nAtivo: "         + this.ativo
+			+ "\nSalário: "       + this.calculaSalario();
+	}
+
 	public double consultaMedica(double valorConsulta) {
 		double desconto = 1;
 		if(this.beneficioMedico == true) {
