@@ -4,12 +4,14 @@ abstract public class Pessoa {
 	protected String nome;
 	protected String sobrenome;
 	protected int idade;
+	protected String cpf;
 	
 	/* constructor */
-	public Pessoa(String nome, String sobrenome, int idade) {
+	public Pessoa(String nome, String sobrenome, int idade, String cpf) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.idade = idade;
+		this.cpf = cpf;
 	}
 
 	/* methods */
